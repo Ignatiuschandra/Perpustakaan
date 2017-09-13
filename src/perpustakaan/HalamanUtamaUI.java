@@ -29,6 +29,7 @@ public class HalamanUtamaUI extends javax.swing.JFrame {
 
         jMenuBar1 = new javax.swing.JMenuBar();
         menuPencarian = new javax.swing.JMenu();
+        menuPeminjaman = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -39,6 +40,14 @@ public class HalamanUtamaUI extends javax.swing.JFrame {
             }
         });
         jMenuBar1.add(menuPencarian);
+
+        menuPeminjaman.setText("Peminjaman");
+        menuPeminjaman.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                menuPeminjamanMouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(menuPeminjaman);
 
         setJMenuBar(jMenuBar1);
 
@@ -63,6 +72,14 @@ public class HalamanUtamaUI extends javax.swing.JFrame {
         
         Perpustakaan.pencarianController.showFormPencarian();
     }//GEN-LAST:event_menuPencarianMouseClicked
+
+    private void menuPeminjamanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuPeminjamanMouseClicked
+        // TODO add your handling code here:
+        
+        Perpustakaan.peminjamanController = new PeminjamanController();
+        
+        Perpustakaan.peminjamanController.showFormPeminjaman();
+    }//GEN-LAST:event_menuPeminjamanMouseClicked
 
     /**
      * @param args the command line arguments
@@ -101,6 +118,7 @@ public class HalamanUtamaUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu menuPeminjaman;
     private javax.swing.JMenu menuPencarian;
     // End of variables declaration//GEN-END:variables
 }

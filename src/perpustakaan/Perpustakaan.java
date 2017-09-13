@@ -10,8 +10,10 @@ public class Perpustakaan {
     
     public static HalamanUtamaUI halamanUtamaUI;
     public static DialogUI dialogUI;
+    public static FormPeminjaman formPeminjaman;
     public static FormPencarian formPencarian;
     public static PencarianController pencarianController;
+    public static PeminjamanController peminjamanController;
     public static BukuProvider bukuProvider;
     
     public static void main(String[] args) {
