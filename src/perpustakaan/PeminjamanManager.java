@@ -15,6 +15,10 @@ public class PeminjamanManager {
             for (BukuDipinjam mauDipinjam : bukuDipinjam) {
                 Perpustakaan.peminjaman.add(mauDipinjam);
             }
+//            for (BukuDipinjam mauDipinjam : bukuDipinjam) {
+//                System.out.println(mauDipinjam.getJudul());
+//                System.out.println(mauDipinjam.getLama());
+//            }
             return true;
         } catch (Exception e) {
             return false;
